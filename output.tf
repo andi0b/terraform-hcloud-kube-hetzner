@@ -66,3 +66,13 @@ output "kubeconfig_data" {
   value       = local.kubeconfig_data
   sensitive   = true
 }
+
+output "control_planes" {
+  value = module.control_planes
+  description = "All control plane items"
+}
+
+output "agents" {
+  value = module.agents
+  description = "All agent items"
+}
